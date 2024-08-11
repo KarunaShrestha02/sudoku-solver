@@ -1,5 +1,5 @@
 import React from "react";
-import Game from "./screens/Game/Game";
+import Game from "../src/Game/Game";
 
 import "./App.css";
 
