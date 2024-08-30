@@ -20,10 +20,10 @@ import {
   checkPlayerWon,
   createSudokuGrid,
   solveSudoku,
-} from "../../utility";
+} from "../utility";
 
-import useLocalStorage from "../../hooks/useLocalStorage";
-import getHint from "../../utility/getHint";
+import useLocalStorage from "../hooks/useLocalStorage.js";
+import getHint from "../utility/getHint.js";
 
 const easyMaxEmptyCells = 30;
 const mediumMaxEmptyCells = 40;
@@ -34,7 +34,6 @@ const Game = () => {
   const [startingGrid, setStartingGrid] = useLocalStorage("startingGrid", null);
   const [clickValue, setClickValue] = useLocalStorage("clickValue", 1);
 
-  // Game Score logic
   const [gameMode, setGameMode] = useLocalStorage(
     "gameMode",
     mediumMaxEmptyCells
